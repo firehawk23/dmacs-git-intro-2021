@@ -17,3 +17,9 @@ class LinkedList:
             curr = curr.next
         curr.next = node
         return
+    
+    def find(self, val):
+        while self.next is not None:
+            if self.data == val:
+                return "Found!"
+        return "Not Found!"
